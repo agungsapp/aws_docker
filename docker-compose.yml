@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  satu:
+    build: ./satu
+    container_name: satu_app
+    ports:
+      - "8001:80"
+
+  dua:
+    build: ./dua
+    container_name: dua_app
+    ports:
+      - "8002:80"
