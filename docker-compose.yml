@@ -35,6 +35,9 @@ services:
     restart: unless-stopped
     ports:
       - "8004:80"
+    volumes:
+      - /var/www/data/mixsum/public:/var/www/html/public
+      - /var/www/data/mixsum/storage:/var/www/html/storage
     depends_on:
       - mysql
     environment:
