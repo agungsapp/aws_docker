@@ -37,7 +37,7 @@ services:
       - "8004:80"
     volumes:
       - /var/www/data/mixsum/public:/var/www/html/public
-      - /var/www/data/mixsum/storage:/var/www/html/storage
+      - /var/www/data/mixsum/storage/app/public:/var/www/html/storage/app/public
     depends_on:
       - mysql
     environment:
